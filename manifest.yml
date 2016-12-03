@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: DongYanChatbot
+  host: DongYanChatbot
+  disk_quota: 1024M
+  services:
+  - Conversation-iw
+  - Speech to Text-zl
+  - Text to Speech-eg
